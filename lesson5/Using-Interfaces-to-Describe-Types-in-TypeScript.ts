@@ -26,20 +26,16 @@ interface ComicBookCharacter extends ComicBookCharacterOptionalProperties {
   health: number;
   isEvil: Evil;
   hobbies: string[];
-
-
 }
 
 interface SuperHero extends ComicBookCharacter {
   isEvil: false;
   goodDeeds: [string]; // it must have at least one good deed, hence the word string is inside the brackets
-
 }
 
 interface SuperVillain extends ComicBookCharacter {
   isEvil: true;
   badDeeds: [string];
-
 }
 
 let superHero: SuperHero = {
